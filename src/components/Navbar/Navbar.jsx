@@ -1,13 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import './Navbar.css'
 import 'material-symbols'
+import MobileNav from "./MobileNav/MobileNav";
+
 
 const Navbar = ()=>{
+
+    const [openMenu, setOpenMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setOpenMenu(!openMenu);
+    };
     return(
         <div>
+            <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
             <nav className="nav-wrapper">
                 <div className="nav-content">
-                    <img className="logo" src="./assets/images/" alt="Sakthivel name Logo" />
+                    <img className="logo" src="./assets/images/sakthivellogo.svg" alt="Sakthivel name Logo" />
                     <ul>
                         <li>
                             <a className="menu-item" href="">Home</a>
@@ -26,12 +35,12 @@ const Navbar = ()=>{
                         </button>
                     </ul>
 
-                    <button class= "menu-btn" onClick={()=>{}}>
+                    <button class= "menu-btn" onClick={toggleMenu}>
                         <span 
                         class={"material-symbols-outlined"}
                         style={{fontSize:"1.8rem"}}
                         >
-                            menu
+                            {openMenu ? "close" :"menu"}
                         </span>
                     </button>
 
