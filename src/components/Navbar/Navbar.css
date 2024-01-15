@@ -116,12 +116,13 @@
 }
 
 @media (max-width:769px){
-    .nav-content ul{
-        display: none;
-    }
     .menu-btn {
         display: block;
     }
+    .nav-content ul{
+        display: none;
+    }
+   
    
 }
 
