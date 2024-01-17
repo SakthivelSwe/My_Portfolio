@@ -43,3 +43,26 @@ export const SKILLS = [
 
 
 ]
+
+export const PROJECTS = [
+    {
+        Title:" BIOLOCATE ATTENDANCE TRACKER",
+        technologies:" Java | Xml | GMAPS API | Biometric API | Android Studio | Fingerprint Android Devices",
+        describes:[
+            "Developed an Android app integrating location-based attendance tracking and biometric authentication for teachers and students.",
+            "Improved attendance accuracy and efficiency,reducing administrative work load and enhancing security through biometric verification.",
+            "Utilized Android Studio,Java,and XML to create a user-friendly application with Google PlayServices LocationAPI and fingerprint recognition for seamless attendance monitoring.",
+        ]
+
+    },
+    {
+        Title:"DATAGATE USERHUB:HIBERNATE MYSQL",
+        technologies:"Java | Hibernate | JPA | MySQL | DAO | DTO| ORM Tool",
+        describes:[
+            "Engineered ”DataGetUserHub,” a robust backend system, seamlessly integrating Hibernate, JPA, and MySQL for efficient data management.",
+            "Significantly improved data management efficiency through streamlined Hibernate and JPA integration,reducing complexity and optimizing performance.",
+            "Leveraged Hibernatefor efficient ORM,enabling smooth Java-MySQL communication, and utilized DTOs and DAOs for organized and maintainable code.",
+        ]
+    },
+    
+]
